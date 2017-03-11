@@ -1,0 +1,29 @@
+*{
+				margin: 0;
+				padding: 0;
+			}
+			#llZoom>div{
+				float: left;
+			}
+			#llZoom .srcImg{
+				width: 480px;
+				height: 300px;
+				position: relative;
+			}
+			#llZoom .srcImg .visbleArea{
+				width: 100px;
+				height: 100px;
+				background: rgba(200,200,200,0.4);
+				position: absolute;
+				top: 0;
+				left: 0;
+				cursor: move;
+				display: none;
+			}
+			#llZoom .zoomImg{
+				width: 100px;
+				height: 100px;
+				overflow: hidden;
+				position: relative;
+				visibility: hidden;
+			}

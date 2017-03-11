@@ -1,0 +1,55 @@
+<!--插件的使用   http://www.jq22.com/jquery-info385
+		导入jQuery库
+		导入插件库
+		导入插件样式
+		确定html结构
+		配置参数，测试-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="jquery.slideBox.css"/>
+		<style type="text/css">
+			img{
+				width: 550px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slide" class="slideBox">
+			 <ul class="items">
+				<li>
+					<a href="javascript:void(0)" title="1"><img src="../img/1.jpg"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" title="2"><img src="../img/2.jpg"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" title="3"><img src="../img/3.jpg"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" title="4"><img src="../img/4.jpg"></a>
+				</li>
+				<li>
+					<a href="javascript:void(0)" title="5"><img src="../img/5.jpg"></a>
+				</li>
+			</ul>
+		</div>
+		<script src="jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.slideBox.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#slide").slideBox({
+				//配置参数
+				direction:"top",//控制轮播方向，top上下，left左右
+				delay:1,       //自动滚动的延迟时间
+				startIndex:3,   //默认从第3张开始滚动
+				hideClickBar:false,
+				hideBottomBar:true,
+				width:550,
+				height:300
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>放大镜效果</title>
+		<link rel="stylesheet" type="text/css" href="llzoom.css"/>
+	</head>
+	<body>
+		<div id="llZoom">
+			<div class="srcImg">
+				<img src="picture10.jpg"/>
+				<div class="visbleArea"></div>
+			</div>
+			<div class="zoomImg">
+			</div>
+		</div>
+		<script src="jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.llzoom.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$("#llZoom").llzoom({
+				imgW: 480, //图片的宽度
+				imgH: 300, //图片的高度	
+				vaW:100,//可见区域的宽度
+				vaH:100,//可见区域的高度
+				multiple:3//放大倍数
+			});
+		</script>
+	</body>
+</html>
+

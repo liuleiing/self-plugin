@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>简易表单验证</title>
+		<script src="jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery.ll_validate.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#form").ll_validate({
+					
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<form action="" method="post" id="form">
+			<label><span>姓名</span><input type="text" name="username" validateType="required" /></label>
+			<label><span>电子邮箱</span><input type="text" name="email"  validateType="email"/></label>
+			<input type="submit" value="submit"/>
+		</form>
+	</body>
+</html>
